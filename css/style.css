@@ -15,6 +15,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light';
   font-weight: 300;
@@ -48,6 +53,44 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #ffe04d;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.input:focus {
+  border-color: #ffd200;
+  outline: none;
 }
 
 /* Стили для шапки */
@@ -129,7 +172,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 140px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -160,6 +203,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -216,6 +263,108 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+}
+
+/* Стили для блок оффер */
+.offer {
+  background: url("../img/offer-bg.jpg") no-repeat;
+  background-size: contain;
+  background-position: center right;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+.offer-text {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer-text__contact {
+  display: block;
+  font-size: 15px;
+}
+
+.offer__contacts {
+  width: 50%;
+  text-align: right;
+}
+
+.offer__text {
+  width: 50%;
+}
+
+.offer__phone {
+  display: inline-block;
+  color: #333;
+  font-size: 15px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
