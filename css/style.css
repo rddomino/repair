@@ -320,10 +320,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .offer-text__contact {
-  display: block;
+  display: bl;
   font-size: 15px;
 }
 
