@@ -99,6 +99,10 @@ img {
   cursor: pointer;
 }
 
+input.invalid {
+  border: 1px solid red;
+}
+
 /* Стили для шапки */
 .navbar {
   padding: 8px 0;
@@ -521,7 +525,7 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc000), to(#ffc000)), url("../img/brif-bg.jpg");
   background-image: linear-gradient(#ffc000, #ffc000), url("../img/brif-bg.jpg");
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -623,7 +627,6 @@ img {
 @media (max-width: 1200px) {
   .brif__form {
     padding-left: 40px;
-    padding-top: 140px;
   }
   .interview {
     padding-right: 30px;
@@ -659,7 +662,7 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc000), to(#ffc000)), url("../img/brif-bg.jpg");
     background-image: linear-gradient(#ffc000, #ffc000), url("../img/brif-bg.jpg");
     background-position: top center, bottom center;
-    background-size: 100% 50%, cover;
+    background-size: 100% 45%, cover;
     background-repeat: no-repeat, no-repeat;
     padding-top: 40px;
   }
@@ -671,6 +674,9 @@ img {
   }
   .brif__form {
     padding-left: 20px;
+  }
+  .brif__form {
+    padding-top: 120px;
   }
 }
 

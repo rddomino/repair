@@ -13,8 +13,8 @@ $(document).ready(function(){
         modal.removeClass('modal_active');
     });
 
-    offer__button.on('click', function(){
+    /* offer__button.on('click', function(){
         $('body').scrollTop(0);
-    });
+    }); */
 
 })
