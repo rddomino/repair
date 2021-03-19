@@ -92,6 +92,7 @@
                         <button class="button offer__button wow animate__fadeInLeft" id="offer__button">Получить бесплатный дизайн-проект</button>
                     </form>
                     <!-- /.form offer__form -->
+                    <div class="success"></div>
 
                     <div class="offer-text">
                         <div class="offer__text">
@@ -335,64 +336,8 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
 
-    <!-- Инициализация библиотеки WOW -->
-    <script>
-        new WOW().init();
-
-        $(document).ready(function(){
-
-            /* Валидация формы */
-            $('#brif-form').validate({
-                rules: {
-                        // simple rule, converted to {required:true}
-                        username: {
-                            required: true,
-                            minlength: 2
-                        },
-                        // compound rule
-                        email: {
-                            required: true,
-                            email: true
-                        }
-                },
-                messages: {
-                    username: {
-                        required: "Укажите ваше имя",
-                        minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов!")
-                    },
-                    email: "Укажите вашу почту"
-                },
-                errorClass: "invalid"
-            });
-            /* Валидация формы */
-            $('#offer-form').validate({
-                rules: {
-                        // simple rule, converted to {required:true}
-                        username: {
-                            required: true,
-                            minlength: 2
-                        },
-                        // compound rule
-                        email: {
-                            required: true,
-                            email: true
-                        }
-                },
-                messages: {
-                    username: {
-                        required: "Укажите ваше имя",
-                        minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов!")
-                    },
-                    email: "Укажите вашу почту"
-                },
-                errorClass: "invalid"
-            });
-
-            /* Валидация плагина маска телефона */
-            $('#phone').mask('+7 (999) 999-99-99');
-
-        });
-    </script>
+    
 </body>
 </html>
