@@ -781,6 +781,7 @@ input.invalid {
   }
 }
 
+/* Стили для блока шаги */
 .steps {
   padding-top: 50px;
 }
@@ -825,7 +826,7 @@ input.invalid {
 }
 
 .section__text {
-  background: #ffd200;
+  background: #ffc000;
 }
 
 .text__title {
@@ -835,6 +836,95 @@ input.invalid {
 
 .section__text {
   padding: 100px 0;
+}
+
+/* Стили для блока помощь */
+.section {
+  margin-top: 60px;
+}
+
+.help-block1 {
+  position: relative;
+  width: 370px;
+  height: 410px;
+}
+
+.help-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.help-block__subtitle {
+  display: inline-block;
+  position: absolute;
+  top: 29px;
+  left: 25px;
+  max-width: 300px;
+  width: 100%;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .help-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .help-block1 {
+    margin-bottom: 120px;
+  }
+  .help {
+    padding: 0;
+  }
+}
+
+/* Стили для блока Сертификаты */
+.sertificats {
+  padding-top: 0;
+}
+
+.sertificats-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 100px;
+}
+
+.sertificats-card {
+  text-align: center;
+}
+
+.sertificats-card__subtitle {
+  max-width: 300px;
+  padding-top: 42px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.section-title {
+  max-width: 580px;
+}
+
+@media (max-width: 800px) {
+  .sertificats {
+    padding: 0;
+  }
+  .sertificats-card {
+    margin-bottom: 80px;
+  }
+  .sertificats-card__subtitle {
+    padding-top: 10px;
+  }
 }
 
 /* Стили для модального окна */
