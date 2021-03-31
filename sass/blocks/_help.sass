@@ -21,7 +21,18 @@
     .help-block
         justify-content: space-around
         &1
-            margin-bottom: 120px
+            margin-bottom: 80px
     .help 
         padding: 0
-    
+@media (max-width: 370px)
+    .help-block
+        justify-content: space-around
+        &1
+            margin-bottom: 0
+        &__subtitle
+            top: 15px
+            left: 15px
+            max-width: 280px
+            width: 100%
+    .help 
+        padding: 0
