@@ -1,7 +1,3 @@
-// Инициализация библиотеки WOW
-   
-        new WOW().init();
-
         $(document).ready(function(){
 
             /* Валидация формы */

@@ -395,6 +395,7 @@ input.invalid {
 .portfolio__title {
   margin: auto;
   margin-bottom: 100px;
+  padding-top: 80px;
 }
 
 .portfolio__arrows {
@@ -571,6 +572,7 @@ input.invalid {
 
 .interview__title {
   margin-bottom: 50px;
+  padding-top: 80px;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -617,6 +619,7 @@ input.invalid {
 
 .form__title {
   margin-bottom: 50px;
+  padding-top: 80px;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
